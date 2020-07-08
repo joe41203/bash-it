@@ -32,7 +32,7 @@ pure_prompt() {
     ps_user_mark="${green} $ ${normal}";
     ps_root="${red}\u${red}";
     ps_root_mark="${red} # ${normal}"
-    ps_path="${yellow}\w${normal}";
+    ps_path="${echo_purple}\w${normal}";
 
     # make it work
     case $(id -u) in
