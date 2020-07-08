@@ -36,9 +36,9 @@ pure_prompt() {
 
     # make it work
     case $(id -u) in
-        0) PS1="$(virtualenv_prompt)$ps_root@$ps_host$(scm_prompt):$ps_path$ps_root_mark"
+        0) PS1="$(virtualenv_prompt)$(scm_prompt):$ps_path$ps_root_mark"
             ;;
-        *) PS1="$(virtualenv_prompt)$ps_user@$ps_host$(scm_prompt):$ps_path$ps_user_mark"
+        *) PS1="$(virtualenv_prompt)$(scm_prompt):$ps_path$ps_user_mark"
             ;;
     esac
 }
